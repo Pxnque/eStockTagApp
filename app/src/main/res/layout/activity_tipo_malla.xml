@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipoMalla">
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="92dp"
+        android:text="(NOMBRE DEL TRABAJADOR)"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTipoMalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="84dp"
+        android:text="TIPO DE MALLA"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombre" />
+
+    <Button
+        android:id="@+id/antigranizobtn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipoMalla"
+        android:text="ANTIGRANIZO"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:backgroundTint="#817B7B"
+        app:cornerRadius="0dp"
+        style="?attr/materialButtonOutlinedStyle"
+        />
+
+    <Button
+        android:id="@+id/antivirusbtn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#817B7B"
+        android:text="ANTIVIRUS"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toEndOf="@+id/antigranizobtn"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipoMalla" />
+
+    <Button
+        android:id="@+id/colorbtn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#817B7B"
+        android:text="COLOR"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/antigranizobtn" />
+
+    <Button
+        android:id="@+id/empaquebtn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#817B7B"
+        android:text="EMPAQUE"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toEndOf="@+id/colorbtn"
+        app:layout_constraintTop_toBottomOf="@+id/antivirusbtn" />
+
+    <Button
+        android:id="@+id/sombrabtn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#817B7B"
+        android:text="SOMBRA"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/colorbtn" />
+
+    <Button
+        android:id="@+id/mosquiterobtn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#817B7B"
+        android:text="MOSQUITERO"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toEndOf="@+id/sombrabtn"
+        app:layout_constraintTop_toBottomOf="@+id/empaquebtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

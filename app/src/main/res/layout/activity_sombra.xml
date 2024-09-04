@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sombra">
+
+    <TextView
+        android:id="@+id/textViewScannedData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="92dp"
+        android:text="Scanned Data"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="84dp"
+        android:text="Sombra"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewScannedData" />
+
+    <Button
+        android:id="@+id/rombobtn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#817B7B"
+        android:text="ROMBO ZIG ZAG"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewButtonText" />
+
+    <Button
+        android:id="@+id/rombo2btn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#817B7B"
+        android:text="ROMBO"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toEndOf="@+id/rombobtn"
+        app:layout_constraintTop_toBottomOf="@+id/textViewButtonText" />
+
+    <Button
+        android:id="@+id/P90btn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#817B7B"
+        android:text="90%"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rombobtn" />
+
+    <Button
+        android:id="@+id/P80btn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#817B7B"
+        android:text="80%"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toEndOf="@+id/P90btn"
+        app:layout_constraintTop_toBottomOf="@+id/rombo2btn" />
+
+    <Button
+        android:id="@+id/P70btn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#817B7B"
+        android:text="70%"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P90btn" />
+
+    <Button
+        android:id="@+id/P60btn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#817B7B"
+        android:text="60%"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toEndOf="@+id/P70btn"
+        app:layout_constraintTop_toBottomOf="@+id/P80btn" />
+
+    <Button
+        android:id="@+id/P50btn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#817B7B"
+        android:text="50%"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P70btn" />
+
+    <Button
+        android:id="@+id/P40btn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#817B7B"
+        android:text="40%"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toEndOf="@+id/P50btn"
+        app:layout_constraintTop_toBottomOf="@+id/P60btn" />
+
+    <Button
+        android:id="@+id/zigzagbtn"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#817B7B"
+        android:text="ZIG ZAG"
+        android:textColor="@color/black"
+        app:cornerRadius="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/P50btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
