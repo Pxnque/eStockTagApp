@@ -28,7 +28,7 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="353dp"
         android:layout_marginEnd="57dp"
-        android:text="Presione para escanear"
+        android:text="Presione para escanear o"
         android:backgroundTint="#056571"/>
 
     <TextView
